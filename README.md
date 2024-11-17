@@ -1,5 +1,7 @@
 # Gen-AI-Benchmark-Automation
 
+This GitHub repository is an implementation of the article available at the following link:  [paper nameTBD](https://github.com/ZhengPeng7/BiRefNet) 
+
 # **Benchmark Automation for Generative AI**  
 This repository provides a complete framework for automating the creation and curation of benchmarks for your specific generative AI use case. I’ve done most of the hard work for you—just customize and run the scripts to build benchmarks tailored to your needs.  
 
@@ -16,13 +18,7 @@ This repository provides a complete framework for automating the creation and cu
 ## **How It Works**  
 
 ### 1. **Setup**  
-Clone this repository and ensure the necessary dependencies are installed.  
-
-```bash
-git clone https://github.com/your-repo-name.git  
-cd your-repo-name  
-pip install -r requirements.txt  
-```
+Clone this repository
 
 ### 2. **Generating Prompts**  
 Run the prompt generation script to create prompts tailored to your use case.  
@@ -95,7 +91,7 @@ For users without local GPU access, this repository integrates seamlessly with R
 ---
 ### Example Usage
 ---
-
+<img src="https://github.com/Efrat-Taig/Gen-AI-Benchmark-Automation/blob/main/img1.png" width="400">
 
 # generate_image_prompts.py
 
@@ -181,6 +177,7 @@ python generate_image_prompts.py --use-case "children's drawings with vibrant co
 - Make sure to set your Replicate API token as an environment variable before running the script.
 
 ---
+<img src="https://github.com/Efrat-Taig/Gen-AI-Benchmark-Automation/blob/main/img2.png" width="400">
 
 # image_creation.py
 
@@ -262,6 +259,7 @@ This script is designed to work seamlessly with the `generate_image_prompts.py` 
 - GPU acceleration is required for efficient image generation. Make sure your environment is properly configured.
 
 ---
+<img src="https://github.com/Efrat-Taig/Gen-AI-Benchmark-Automation/blob/main/img3.png" width="400">
 
 # evaluate_images.py
 
