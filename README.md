@@ -62,7 +62,7 @@ python manual_review.py --input-file evaluation.json --final-output refined_benc
 
 ## **Repository Structure**  
 
-- `generate_prompts.py`: Generates prompts based on your use case.  
+- `generate_image_prompts.py`: Generates prompts based on your use case.  
 - `image_creation.py`: Creates images using the prompts.  
 - `evaluate_images.py`: Evaluates the relevance of generated images using LLaVA or another model.  
 - `manual_review.py`: Assists with the final manual curation process.  
