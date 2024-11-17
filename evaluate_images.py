@@ -1,3 +1,35 @@
+
+"""
+This script evaluates images based on a specified style or use case using the LLaVA model via Replicate API.
+It dynamically asks questions about how well each image matches the style, calculates an average score,
+and filters the images based on a user-defined threshold. 
+
+### Key Features:
+1. **Dynamic Evaluation**:
+   - Evaluates each image against a specific use case (e.g., "children's drawings").
+   - Asks the LLaVA model multiple questions to assign scores between 1 and 10.
+
+2. **Automatic Filtering**:
+   - Images with an average score above the threshold are saved to a specified folder.
+   - Images that fail the threshold remain in the original folder.
+
+3. **Customizable Parameters**:
+   - The script allows users to specify:
+     - Input folder (where images are stored).
+     - Output folder (where filtered images will be saved).
+     - Use case (to define the evaluation style).
+     - Score threshold (default: 7).
+
+4. **Detailed Logging**:
+   - Prints detailed responses from the model for debugging.
+   - Logs both successful evaluations and errors.
+
+### Requirements:
+- Install dependencies:
+    pip install replicate pillow
+"""
+
+
 import replicate
 import re
 import argparse
